@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP Acolhe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+<div class="phone">
+
+    <div class="status-bar">
+        <span>09:41</span>
+
+        <div class="status-icons">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+    </div>
+
+    <div class="app-falar">
+
+        <div class="page-header">
+
+            <a href="index.html" class="back">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <h1>Falar com a Promotoria</h1>
+
+        </div>
+
+        <div class="chat" id="chat">
+
+            <div class="day-divider">
+
+                Hoje
+
+            </div>
+
+            <div class="message ai">
+
+                <div class="bubble">
+
+                    <span class="sender">
+                        🤖 Assistente MP Acolhe
+                    </span>
+
+                    <p>
+                        Olá! 👋
+                    </p>
+
+                    <p>
+                        Estou aqui para ajudar você a organizar sua mensagem antes de encaminhá-la à Promotoria.
+                    </p>
+
+                    <p>
+                        Escreva normalmente o que deseja informar. Eu identificarei automaticamente o assunto para facilitar o atendimento.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <button class="attach-button" id="attachButton">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="Escreva sua mensagem..."
+            >
+
+            <button class="send-button" id="sendButton">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </div>
+
+        <div class="bottom-sheet" id="bottomSheet">
+
+            <div class="sheet-handle"></div>
+
+            <div class="sheet-header">
+
+                <h3>Enviar informações</h3>
+
+                <button id="closeSheet">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+            <div class="sheet-options">
+
+                <button class="sheet-option">
+
+                    <div class="sheet-icon">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+
+                    <span>Foto</span>
+
+                </button>
+
+                <button class="sheet-option">
+
+                    <div class="sheet-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+
+                    <span>Vídeo</span>
+
+                </button>
+
+                <button class="sheet-option">
+
+                    <div class="sheet-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <span>Documento</span>
+
+                </button>
+
+                <button class="sheet-option">
+
+                    <div class="sheet-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <span>Localização</span>
+
+                </button>
+
+                <button class="sheet-option">
+
+                    <div class="sheet-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+
+                    <span>Nova testemunha</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

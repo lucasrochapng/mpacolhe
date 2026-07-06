@@ -40,95 +40,63 @@
             Acompanhe o andamento do seu processo de forma simples.
         </p>
 
-        <div class="progress">
+        <div class="tabs">
 
-            <!-- investigação -->
-            <div class="step completed">
+            <button class="tab active" id="tab-status">
+                Status
+            </button>
 
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+            <button class="tab" id="tab-timeline">
+                Linha do Tempo
+            </button>
 
-                <div class="content">
+        </div>
 
-                    <div class="step-header">
+        <div id="status-content">
 
-                        <div>
-                            <h3>Investigação</h3>
-                            <p>Concluída</p>
-                        </div>
+            <div class="progress">
 
-                        <i class="fa-solid fa-chevron-down arrow"></i>
+                <!-- investigação -->
+                <div class="step completed">
 
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
 
-                    <div class="step-description">
+                    <div class="content">
 
-                        <div class="info-block">
+                        <div class="step-header">
 
-                            <h4>O que aconteceu?</h4>
+                            <div>
+                                <h3>Investigação</h3>
+                                <p>Concluída</p>
+                            </div>
 
-                            <p>
-                                A polícia reuniu informações, ouviu testemunhas e buscou esclarecer os fatos relacionados ao caso.
-                            </p>
-
-                        </div>
-
-                        <div class="info-block">
-
-                            <h4>Próximo passo</h4>
-
-                            <p>
-                                O Ministério Público analisará as provas para decidir quais medidas serão tomadas.
-                            </p>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
 
                         </div>
 
-                    </div>
+                        <div class="step-description">
 
-                </div>
+                            <div class="info-block">
 
-            </div>
+                                <h4>O que aconteceu?</h4>
 
-            <!-- perícia -->
-            <div class="step completed">
+                                <p>
+                                    A polícia reuniu informações, ouviu testemunhas e buscou esclarecer os fatos relacionados ao caso.
+                                </p>
 
-                <div class="icon">
-                    <i class="fa-solid fa-microscope"></i>
-                </div>
+                            </div>
 
-                <div class="content">
+                            <div class="info-block">
 
-                    <div class="step-header">
+                                <h4>Próximo passo</h4>
 
-                        <div>
-                            <h3>Perícia</h3>
-                            <p>Concluída</p>
-                        </div>
+                                <p>
+                                    O Ministério Público analisará as provas para decidir quais medidas serão tomadas.
+                                </p>
 
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-
-                    </div>
-
-                    <div class="step-description">
-
-                        <div class="info-block">
-
-                            <h4>O que aconteceu?</h4>
-
-                            <p>
-                                Especialistas realizaram análises técnicas para ajudar a esclarecer os fatos e produzir provas para o processo.
-                            </p>
-
-                        </div>
-
-                        <div class="info-block">
-
-                            <h4>Próximo passo</h4>
-
-                            <p>
-                                Os resultados da perícia serão avaliados juntamente com as demais provas do processo.
-                            </p>
+                            </div>
 
                         </div>
 
@@ -136,47 +104,95 @@
 
                 </div>
 
-            </div>
+                <!-- perícia -->
+                <div class="step completed">
 
-            <!-- aguardando manifestação -->
-            <div class="step current">
+                    <div class="icon">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
 
-                <div class="icon">
-                    <i class="fa-solid fa-hourglass-half"></i>
+                    <div class="content">
+
+                        <div class="step-header">
+
+                            <div>
+                                <h3>Perícia</h3>
+                                <p>Concluída</p>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+
+                        </div>
+
+                        <div class="step-description">
+
+                            <div class="info-block">
+
+                                <h4>O que aconteceu?</h4>
+
+                                <p>
+                                    Especialistas realizaram análises técnicas para ajudar a esclarecer os fatos e produzir provas para o processo.
+                                </p>
+
+                            </div>
+
+                            <div class="info-block">
+
+                                <h4>Próximo passo</h4>
+
+                                <p>
+                                    Os resultados da perícia serão avaliados juntamente com as demais provas do processo.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="content">
+                <!-- aguardando manifestação -->
+                <div class="step current">
 
-                    <div class="step-header">
-
-                        <div>
-                            <h3>Aguardando manifestação</h3>
-                            <p>Etapa atual</p>
-                        </div>
-
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-
+                    <div class="icon">
+                        <i class="fa-solid fa-hourglass-half"></i>
                     </div>
 
-                    <div class="step-description">
+                    <div class="content">
 
-                        <div class="info-block">
+                        <div class="step-header">
 
-                            <h4>O que está acontecendo?</h4>
+                            <div>
+                                <h3>Aguardando manifestação</h3>
+                                <p>Etapa atual</p>
+                            </div>
 
-                            <p>
-                                O Ministério Público está analisando todas as informações reunidas até o momento para decidir o próximo passo.
-                            </p>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
 
                         </div>
 
-                        <div class="info-block">
+                        <div class="step-description">
 
-                            <h4>Próximo passo</h4>
+                            <div class="info-block">
 
-                            <p>
-                                Após essa análise, poderá ser solicitado o arquivamento do caso ou o início da ação penal.
-                            </p>
+                                <h4>O que está acontecendo?</h4>
+
+                                <p>
+                                    O Ministério Público está analisando todas as informações reunidas até o momento para decidir o próximo passo.
+                                </p>
+
+                            </div>
+
+                            <div class="info-block">
+
+                                <h4>Próximo passo</h4>
+
+                                <p>
+                                    Após essa análise, poderá ser solicitado o arquivamento do caso ou o início da ação penal.
+                                </p>
+
+                            </div>
 
                         </div>
 
@@ -184,105 +200,194 @@
 
                 </div>
 
-            </div>
+                <!-- denúncia -->
+                <div class="step pending">
 
-            <!-- denúncia -->
-            <div class="step pending">
+                    <div class="icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
 
-                <div class="icon">
-                    <i class="fa-solid fa-scale-balanced"></i>
+                    <div class="content">
+
+                        <div class="step-header">
+
+                            <div>
+                                <h3>Denúncia</h3>
+                                <p>Aguardando</p>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+
+                        </div>
+
+                        <div class="step-description">
+
+                            <div class="info-block">
+
+                                <h4>O que isso significa?</h4>
+
+                                <p>
+                                    O Ministério Público entendeu que existem elementos suficientes para pedir à Justiça o início da ação penal.
+                                </p>
+
+                            </div>
+
+                            <div class="info-block">
+
+                                <h4>Próximo passo</h4>
+
+                                <p>
+                                    O juiz analisará a denúncia e decidirá se ela será recebida para dar continuidade ao processo.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
                 </div>
 
-                <div class="content">
+                <!-- tribunal do júri -->
+                <div class="step pending">
 
-                    <div class="step-header">
-
-                        <div>
-                            <h3>Denúncia</h3>
-                            <p>Aguardando</p>
-                        </div>
-
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-
+                    <div class="icon">
+                        <i class="fa-solid fa-gavel"></i>
                     </div>
 
-                    <div class="step-description">
+                    <div class="content">
 
-                        <div class="info-block">
+                        <div class="step-header">
 
-                            <h4>O que isso significa?</h4>
+                            <div>
+                                <h3>Tribunal do Júri</h3>
+                                <p>Aguardando</p>
+                            </div>
 
-                            <p>
-                                O Ministério Público entendeu que existem elementos suficientes para pedir à Justiça o início da ação penal.
-                            </p>
-
-                        </div>
-
-                        <div class="info-block">
-
-                            <h4>Próximo passo</h4>
-
-                            <p>
-                                O juiz analisará a denúncia e decidirá se ela será recebida para dar continuidade ao processo.
-                            </p>
+                            <i class="fa-solid fa-chevron-down arrow"></i>
 
                         </div>
 
-                    </div>
-                    
-                </div>
+                        <div class="step-description">
 
-            </div>
+                            <div class="info-block">
 
-            <!-- tribunal do júri -->
-            <div class="step pending">
+                                <h4>O que vai acontecer?</h4>
 
-                <div class="icon">
-                    <i class="fa-solid fa-gavel"></i>
-                </div>
+                                <p>
+                                    O caso será apresentado ao Tribunal do Júri, onde os jurados analisarão as provas e decidirão sobre os fatos.
+                                </p>
 
-                <div class="content">
+                            </div>
 
-                    <div class="step-header">
+                            <div class="info-block">
 
-                        <div>
-                            <h3>Tribunal do Júri</h3>
-                            <p>Aguardando</p>
+                                <h4>Próximo passo</h4>
+
+                                <p>
+                                    Após o julgamento, será proferida a decisão conforme o entendimento dos jurados e do juiz.
+                                </p>
+
+                            </div>
+
                         </div>
-
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-
+                        
                     </div>
 
-                    <div class="step-description">
-
-                        <div class="info-block">
-
-                            <h4>O que vai acontecer?</h4>
-
-                            <p>
-                                O caso será apresentado ao Tribunal do Júri, onde os jurados analisarão as provas e decidirão sobre os fatos.
-                            </p>
-
-                        </div>
-
-                        <div class="info-block">
-
-                            <h4>Próximo passo</h4>
-
-                            <p>
-                                Após o julgamento, será proferida a decisão conforme o entendimento dos jurados e do juiz.
-                            </p>
-
-                        </div>
-
-                    </div>
-                    
                 </div>
 
             </div>
 
         </div>
+
+        <div id="timeline-content">
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <div class="timeline-info">
+
+                        <span class="date">12/03/2026</span>
+
+                        <h3>Ocorrência registrada</h3>
+
+                        <p>
+                            O fato foi comunicado às autoridades competentes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+
+                    <div class="timeline-info">
+
+                        <span class="date">15/03/2026</span>
+
+                        <h3>Inquérito instaurado</h3>
+
+                        <p>
+                            Foi iniciada a investigação para esclarecer os fatos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+
+                    <div class="timeline-info">
+
+                        <span class="date">22/03/2026</span>
+
+                        <h3>Perícia realizada</h3>
+
+                        <p>
+                            Os exames técnicos foram concluídos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <div class="timeline-info">
+
+                        <span class="date">18/04/2026</span>
+
+                        <h3>Audiência</h3>
+
+                        <p>
+                            As partes foram ouvidas pela Justiça.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </div>
 

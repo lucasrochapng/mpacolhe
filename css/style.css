@@ -74,6 +74,14 @@ body{
     padding: 0 20px 0 20px;
 }
 
+.app-falar{
+    background:#F5F7FA;
+    height:calc(100% - 70px);
+    padding:30px 22px;
+    display:flex;
+    flex-direction:column;
+}
+
 .welcome{
     margin-top:30px;
 }
@@ -257,10 +265,6 @@ body{
     
 }
 
-/* .info-block h4, .info-block p {
-    font-size: 14px;
-} */
-
 .step.active .step-description{
     max-height:500px;
     margin-top:15px;
@@ -293,4 +297,446 @@ body{
     color:#5E6B7A;
     line-height:1.7;
     font-size:15px;
+}
+
+.tabs{
+    display:flex;
+    background:#EEF2F7;
+    border-radius:14px;
+    padding:5px;
+    margin-bottom:30px;
+}
+
+.tab{
+    flex:1;
+    border:none;
+    background:none;
+    padding:12px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    color:#555;
+    transition:.2s;
+}
+
+.tab.active{
+    background:white;
+    color:#12355B;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+#timeline-content{
+    display:none;
+}
+
+.timeline{
+    position:relative;
+    margin-left:18px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:22px;
+    top:10px;
+    bottom:10px;
+    width:3px;
+    background:#D9E1EA;
+    border-radius:20px;
+}
+
+.timeline-item{
+    display:flex;
+    gap:18px;
+    position:relative;
+    margin-bottom:35px;
+}
+
+.timeline-icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#1E6FB9;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+    z-index:2;
+    font-size:18px;
+}
+
+.timeline-info{
+    padding-top:2px;
+}
+
+.date{
+    display:inline-block;
+    font-size:13px;
+    color:#6B7280;
+    margin-bottom:6px;
+    font-weight:600;
+}
+
+.timeline-info h3{
+    font-size:18px;
+    color:#22313F;
+    margin-bottom:8px;
+}
+
+.timeline-info p{
+    line-height:1.7;
+    color:#5F6B7A;
+    font-size:15px;
+}
+
+/* TELA FALAR COM A PROMOTORIA ======================================== */
+
+.assistant-card{
+    display:flex;
+    gap:18px;
+    margin-top:25px;
+    margin-bottom:25px;
+    padding:18px;
+    background:#EEF6FF;
+    border:1px solid #D6E7F8;
+    border-radius:18px;
+}
+
+.assistant-card i{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#1E6FB9;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    flex-shrink:0;
+}
+
+.assistant-card h3{
+    color:#12355B;
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.assistant-card p{
+    color:#5F6B7A;
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* .chat{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    overflow-y:auto;
+} */
+
+.chat{
+    flex:1;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    padding-bottom:15px;
+}
+
+.day-divider{
+    text-align:center;
+    color:#7A8797;
+    font-size:14px;
+    margin:15px 0;
+    position:relative;
+}
+
+.chat-input{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top: auto;
+}
+
+.chat-input input{
+    flex:1;
+    border:none;
+    background:white;
+    padding:14px 18px;
+    border-radius:30px;
+    font-size:15px;
+    outline:none;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.attach-button{
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:#12355B;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.send-button{
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:#1E6FB9;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.message{
+    display:flex;
+    margin-bottom:18px;
+}
+
+.message.ai{
+    justify-content:flex-start;
+}
+
+.message.user{
+    justify-content:flex-end;
+}
+
+.bubble{
+    max-width:78%;
+    padding:14px 18px;
+    border-radius:18px;
+    line-height:1.7;
+}
+
+.message.ai .bubble{
+    background:white;
+    color:#2F3A45;
+    border:1px solid #E4E8ED;
+    border-top-left-radius:6px;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.sender{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    color:#1E6FB9;
+    margin-bottom:10px;
+}
+
+.bubble p{
+    margin-bottom:10px;
+}
+
+.bubble p:last-child{
+    margin-bottom:0;
+}
+
+.message.user .bubble{
+    background:#1E6FB9;
+    color:white;
+    border-top-right-radius:6px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.typing{
+    display:flex;
+    gap:6px;
+    align-items:center;
+    padding:8px 0;
+}
+
+.typing span{
+    width:8px;
+    height:8px;
+    background:#9AA6B2;
+    border-radius:50%;
+    animation:typing 2s infinite;
+
+}
+
+.typing span:nth-child(2){
+    animation-delay:.2s;
+}
+
+.typing span:nth-child(3){
+    animation-delay:.4s;
+}
+
+@keyframes typing{
+
+    0%,80%,100%{
+        transform:scale(.8);
+        opacity:.4;
+    }
+
+    40%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+}
+
+.confirm-button{
+    margin-top:18px;
+    width:100%;
+    border:none;
+    background:#1E6FB9;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    opacity:.8;
+    cursor:default;
+}
+
+.success-message{
+    margin-top:18px;
+    padding:14px;
+    border-radius:12px;
+    background:#E8F5E9;
+    color:#2E7D32;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:90;
+}
+
+.overlay.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.bottom-sheet{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background:white;
+    border-radius:24px 24px 0 0;
+    padding:20px;
+    transform:translateY(100%);
+    transition:.35s;
+    z-index:100;
+}
+
+.bottom-sheet.show{
+    transform:translateY(0);
+}
+
+.sheet-handle{
+    width:50px;
+    height:5px;
+    background:#D5DCE3;
+    border-radius:50px;
+    margin:0 auto 20px;
+}
+
+.bottom-sheet h3{
+    text-align:center;
+    color:#12355B;
+    margin-bottom:20px;
+}
+
+.sheet-options{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:25px;
+}
+
+.sheet-option{
+    border:none;
+    background:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.sheet-option i{
+    width:42px;
+    height:42px;
+    border-radius:12px;
+    background:#1E6FB9;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sheet-option span{
+    font-size:17px;
+    font-weight:600;
+}
+
+.sheet-icon{
+    width:62px;
+    height:62px;
+    border-radius:18px;
+    background:#1E6FB9;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    transition:.2s;
+}
+
+.sheet-option span{
+    text-align:center;
+    font-size:14px;
+    color:#22313F;
+    font-weight:600;
+}
+
+.sheet-header{
+    position:relative;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+
+.sheet-header h3{
+    margin:0;
+    font-size:20px;
+    color:#12355B;
+}
+
+
+.sheet-header button{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:35px;
+    height:35px;
+    border:none;
+    background:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    color:#5F6B7A;
+    padding:0;
+    cursor:pointer;
 }
