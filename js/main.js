@@ -290,3 +290,107 @@ if (attachButton) {
     });
 
 }
+
+
+// LOGIN
+// LOGIN
+
+const govButton = document.getElementById("govButton");
+const stepGov = document.getElementById("stepGov");
+const stepLogin = document.getElementById("stepLogin");
+
+if(govButton){
+
+    govButton.addEventListener("click",()=>{
+
+        stepGov.classList.remove("active");
+
+        stepLogin.classList.add("active");
+
+    });
+
+}
+
+
+
+const cpfInput=document.getElementById("cpf");
+
+if(cpfInput){
+
+    cpfInput.addEventListener("input",function(){
+
+        let value=this.value.replace(/\D/g,"");
+
+        value=value.replace(/^(\d{3})(\d)/,"$1.$2");
+
+        value=value.replace(/^(\d{3})\.(\d{3})(\d)/,"$1.$2.$3");
+
+        value=value.replace(/\.(\d{3})(\d)/,".$1-$2");
+
+        this.value=value;
+
+    });
+
+}
+
+
+
+const togglePassword=document.getElementById("togglePassword");
+const password=document.getElementById("password");
+
+if(togglePassword){
+
+    togglePassword.addEventListener("click",()=>{
+
+        if(password.type==="password"){
+
+            password.type="text";
+
+            togglePassword.innerHTML='<i class="fa-solid fa-eye-slash"></i>';
+
+        }else{
+
+            password.type="password";
+
+            togglePassword.innerHTML='<i class="fa-solid fa-eye"></i>';
+
+        }
+
+    });
+
+}
+
+
+
+const enterButton=document.getElementById("enterButton");
+const loginStatus=document.getElementById("loginStatus");
+
+if(enterButton){
+
+    enterButton.addEventListener("click",()=>{
+
+        loginStatus.innerHTML=`
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            Verificando identidade...
+        `;
+
+        enterButton.disabled=true;
+
+        setTimeout(()=>{
+
+            loginStatus.innerHTML=`
+                <i class="fa-solid fa-circle-check"></i>
+                Identidade confirmada
+            `;
+
+            setTimeout(()=>{
+
+                window.location.href="index.html";
+
+            },1000);
+
+        },1500);
+
+    });
+
+}
