@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MP Acolhe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="phone">
+
+    <div class="status-bar">
+
+        <span>09:41</span>
+
+        <div class="status-icons">
+
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+
+        </div>
+
+    </div>
+
+    <div class="app-memoria">
+
+        <div class="page-header">
+
+            <a href="index.html" class="back">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+            <h1>Memória da vítima</h1>
+
+        </div>
+
+        <div class="memory-content">
+
+            <p class="memory-intro">
+
+                Toda vítima tem uma história.
+
+                Este espaço foi criado para preservar sua memória e lembrar quem ela era além do processo.
+
+            </p>
+
+            <div class="memory-photo empty" id="openGallery">
+
+                <div class="photo-placeholder" id="photoPlaceholder">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    <span>
+                        Adicionar fotografia
+                    </span>
+
+                </div>
+
+                <img 
+                    src=""
+                    id="victimPhoto"
+                >
+
+            </div>
+
+            <div class="memory-section">
+
+                <h2>Quem era essa pessoa?</h2>
+
+                <textarea
+                    rows="4"
+                    placeholder="Conte um pouco sobre quem ela era..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="memory-section">
+
+                <h2>Do que ela gostava?</h2>
+
+                <textarea
+                    rows="4"
+                    placeholder="Hobbies, sonhos, profissão, momentos especiais..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="memory-section">
+
+                <h2>Uma mensagem</h2>
+
+                <textarea
+                    rows="6"
+                    placeholder="Escreva uma mensagem que ajude a preservar essa memória..."
+                ></textarea>
+
+            </div>
+
+
+            <button class="save-memory" id="saveMemory">
+
+                Preservar esta memória
+
+            </button>
+
+
+            <div class="memory-status" id="memoryStatus"></div>
+
+            <div class="gallery-overlay" id="galleryOverlay">
+
+                <div class="gallery-sheet">
+
+
+                    <div class="gallery-header">
+
+                        <h3>
+                            Escolha uma fotografia
+                        </h3>
+
+
+                        <button id="closeGallery">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="gallery-grid">
+
+
+                        <img src="memorias/memoria1.jpg">
+
+                        <img src="memorias/memoria2.jpg">
+
+                        <img src="memorias/memoria3.jpg">
+
+                        <img src="memorias/memoria4.jpg">
+
+                        <img src="memorias/memoria5.jpg">
+
+                        <img src="memorias/memoria6.jpg">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/memoria.js"></script>
+
+</body>
+
+</html>
