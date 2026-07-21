@@ -22,31 +22,15 @@ if(helpButtons.length){
 
                 {
 
-                    nome:"CAPS Centro",
+                    nome:"CREAS Paranaguá",
 
-                    imagem:"images/caps.jpg",
+                    imagem:"images/creas.jpg",
 
-                    endereco:"Rua Exemplo, 123",
+                    endereco:"Rua Vieira dos Santos - Paranaguá, PR, 83203-050",
 
-                    telefone:"(41) 3333-3333",
+                    telefone:"(41) 3420-2928",
 
                     horario:"Segunda a Sexta • 08h às 18h",
-
-                    mapa:"https://maps.google.com"
-
-                },
-
-                {
-
-                    nome:"Hospital Municipal",
-
-                    imagem:"images/hospital.jpg",
-
-                    endereco:"Av. Exemplo, 450",
-
-                    telefone:"(41) 3222-1111",
-
-                    horario:"24 horas",
 
                     mapa:"https://maps.google.com"
 
@@ -64,15 +48,63 @@ if(helpButtons.length){
 
                 {
 
-                    nome:"Defensoria Pública",
+                    nome:"Fórum Criminal Paranaguá",
+
+                    imagem:"images/forum.jpg",
+
+                    endereco:"Av. Gabriel de Lara, 771 - João Gualberto, Paranaguá - PR, 83203-550",
+
+                    telefone:"(41) 3420-5000",
+
+                    horario:"Segunda a Sexta • 12h às 18h",
+
+                    mapa:"https://maps.google.com"
+
+                },
+
+                {
+
+                    nome:"Ministério Público do Estado do Paraná",
+
+                    imagem:"images/ministerio.jpg",
+
+                    endereco:"Alameda Cel. Elizio Pereira, 722 - Estradinha, Paranaguá - PR, 83206-000",
+
+                    telefone:"(41) 3424-0566",
+
+                    horario:"Segunda a Sexta • 08h às 18h",
+
+                    mapa:"https://maps.google.com"
+
+                },
+
+                {
+
+                    nome:"Defensoria Pública de Paranaguá",
 
                     imagem:"images/defensoria.jpg",
 
-                    endereco:"Rua Exemplo, 500",
+                    endereco:"R. Baronesa do Cerro Azul, 974-1014 - Campo Grande, Paranaguá - PR, 83203-420",
 
                     telefone:"(41) 3000-0000",
 
-                    horario:"Segunda a Sexta • 12h às 18h",
+                    horario:"Segunda a Sexta • 13h às 18h",
+
+                    mapa:"https://maps.google.com"
+
+                },
+
+                {
+
+                    nome:"Delegacia Cidadã de Paranaguá",
+
+                    imagem:"images/delegacia.jpg",
+
+                    endereco:"R. Domingos Peneda, 2850 - Vila Itiberê, Paranaguá - PR, 83209-235",
+
+                    telefone:"(41) 3420-3600",
+
+                    horario:"Segunda a Sexta • 09h às 18h",
 
                     mapa:"https://maps.google.com"
 
@@ -90,15 +122,15 @@ if(helpButtons.length){
 
                 {
 
-                    nome:"Conselho Tutelar",
+                    nome:"Secretaria Municipal de Educação",
 
-                    imagem:"images/conselho.jpg",
+                    imagem:"images/educacao.jpg",
 
-                    endereco:"Rua Exemplo, 999",
+                    endereco:"João Gualberto, Paranaguá - PR, 83203-600",
 
-                    telefone:"(41) 3111-1111",
+                    telefone:"(41) 3271-1770",
 
-                    horario:"24 horas",
+                    horario:"Segunda a Segunda • 08h às 18h",
 
                     mapa:"https://maps.google.com"
 
@@ -116,15 +148,31 @@ if(helpButtons.length){
 
                 {
 
-                    nome:"CRAS Centro",
+                    nome:"Secretaria Municipal de Assistência Social",
 
-                    imagem:"images/cras.jpg",
+                    imagem:"images/assistencia.jpg",
 
-                    endereco:"Rua Exemplo, 250",
+                    endereco:"R. Baronesa do Cerro Azul, 2382 - Palmital, Paranaguá - PR, 83203-420",
 
-                    telefone:"(41) 3555-5555",
+                    telefone:"(41) 3420-2897",
 
                     horario:"Segunda a Sexta • 08h às 17h",
+
+                    mapa:"https://maps.google.com"
+
+                },
+
+                {
+
+                    nome:"Hospital Regional do Litoral do Paraná",
+
+                    imagem:"images/hospital.jpg",
+
+                    endereco:"R. Pres. Getúlio Vargas, 222 - Palmital, Paranaguá - PR, 83206-020",
+
+                    telefone:"(41) 3420-7400",
+
+                    horario:"24 horas",
 
                     mapa:"https://maps.google.com"
 

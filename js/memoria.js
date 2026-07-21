@@ -46,7 +46,7 @@ if (saveMemory && memoryStatus) {
 
                 <p class="memory-quote" style="margin-bottom: 50px;">
 
-                    "A memória preserva aquilo que o tempo não deve apagar."
+                    "A memória preserva nossos entes queridos dentro dos nossos corações."
 
                 </p>
 

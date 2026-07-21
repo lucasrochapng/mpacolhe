@@ -84,6 +84,7 @@ body{
 
 .welcome{
     margin-top:30px;
+    text-align: justify;
 }
 
 .welcome h1{
@@ -740,6 +741,26 @@ body{
     color:#5F6B7A;
     padding:0;
     cursor:pointer;
+}
+
+.timeline-note{
+    margin-top:15px;
+    padding:14px;
+    background:#FFF8E8;
+    border-left:4px solid #F4B400;
+    border-radius:10px;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.timeline-alert{
+    margin-top:18px;
+    padding:16px;
+    background:#EAF4FF;
+    border-left:4px solid #1E6FB9;
+    border-radius:10px;
+    font-size:14px;
+    line-height:1.6;
 }
 
 /* TELA DE LOGIN ====================================================== */
