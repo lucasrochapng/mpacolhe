@@ -1,95 +1,93 @@
 // ======================================
-// LEITOR DE TELA
+// LEITOR DE TEXTO
 // ======================================
 
-const readButton = document.getElementById("readPageButton");
+let currentSpeech = null;
+let currentButton = null;
 
-let speech = null;
-let reading = false;
+document.querySelectorAll(".speak-button").forEach(button => {
 
-if (readButton) {
+    button.addEventListener("click", () => {
 
-    readButton.addEventListener("click", toggleReading);
+        // Se clicar no mesmo botão enquanto está lendo
+        if(currentButton === button && speechSynthesis.speaking){
 
-}
+            speechSynthesis.cancel();
 
-function getSpeechText() {
+            resetButton(button);
 
-    const page = document.getElementById("pageContent");
+            currentButton = null;
 
-    if (!page)
-        return document.body.innerText;
+            return;
 
-    return page.dataset.speech || page.innerText;
+        }
 
-}
-
-function toggleReading() {
-
-    if (reading) {
-
+        // Para qualquer leitura anterior
         speechSynthesis.cancel();
 
-        finishReading();
+        if(currentButton){
 
-        return;
+            resetButton(currentButton);
 
-    }
+        }
 
-    speech = new SpeechSynthesisUtterance(getSpeechText());
+        const target = document.getElementById(button.dataset.target);
 
-    speech.lang = "pt-BR";
+        if(!target) return;
 
-    speech.rate = 1;
+        currentSpeech = new SpeechSynthesisUtterance(target.innerText);
 
-    speech.pitch = 1;
+        currentSpeech.lang = "pt-BR";
 
-    speech.volume = 1;
+        currentSpeech.rate = 1;
 
-    // tenta utilizar uma voz em português
-    const voices = speechSynthesis.getVoices();
+        currentSpeech.pitch = 1;
 
-    const ptVoice = voices.find(v => v.lang.startsWith("pt"));
+        currentSpeech.volume = 1;
 
-    if (ptVoice) {
+        const voice = speechSynthesis
+            .getVoices()
+            .find(v => v.lang.startsWith("pt"));
 
-        speech.voice = ptVoice;
+        if(voice){
 
-    }
+            currentSpeech.voice = voice;
 
-    speech.onstart = () => {
+        }
 
-        reading = true;
+        currentSpeech.onend = () => {
 
-        readButton.classList.add("playing");
+            resetButton(button);
 
-        readButton.innerHTML = `
+            currentButton = null;
+
+        };
+
+        button.classList.add("playing");
+
+        button.innerHTML = `
             <i class="fa-solid fa-stop"></i>
         `;
 
-    };
+        currentButton = button;
 
-    speech.onend = finishReading;
+        speechSynthesis.speak(currentSpeech);
 
-    speech.onerror = finishReading;
+    });
 
-    speechSynthesis.speak(speech);
+});
 
-}
+function resetButton(button){
 
-function finishReading() {
+    button.classList.remove("playing");
 
-    reading = false;
-
-    readButton.classList.remove("playing");
-
-    readButton.innerHTML = `
+    button.innerHTML = `
         <i class="fa-solid fa-volume-high"></i>
     `;
 
 }
 
-window.addEventListener("beforeunload", () => {
+window.addEventListener("beforeunload",()=>{
 
     speechSynthesis.cancel();
 

@@ -16,32 +16,35 @@ body{
     height:100vh;
 }
 
-.read-page-button{
-    position:absolute;
-    right:20px;
-    bottom:20px;
-    width:58px;
-    height:58px;
-    border:none;
-    border-radius:50%;
-    background:#1E6FB9;
-    color:white;
-    font-size:22px;
-    cursor:pointer;
+/* .speech-header{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    box-shadow:0 8px 18px rgba(0,0,0,.18);
-    z-index:999;
-    transition:.25s;
+    gap:15px;
+} */
+
+.speak-button{
+    border:none;
+    background:none;
+    padding:0;
+    margin-left:6px;
+    color:#1E6FB9;
+    cursor:pointer;
+    font-size:1em;
+    vertical-align:middle;
+    transition:.2s;
 }
 
-.read-page-button:active{
-    transform:scale(.95);
+.speak-button:hover{
+    color:#0F5DA8;
 }
 
-.read-page-button.playing{
-    background:#D64545;
+.speak-button.playing{
+    color:#D64545;
+}
+
+.speak-button:active{
+    transform:scale(.9);
 }
 
 /* TELA INICIAL ========================================= */
