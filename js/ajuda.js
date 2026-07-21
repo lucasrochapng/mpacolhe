@@ -34,6 +34,22 @@ if(helpButtons.length){
 
                     mapa:"https://maps.google.com"
 
+                },
+
+                {
+
+                    nome:"CAPS Paranaguá",
+
+                    imagem:"images/caps.jpg",
+
+                    endereco:"Av. Belmiro Sebastião Marques, 1045 - Parque São João, Paranaguá - PR, 83215-090",
+
+                    telefone:"(41) 3420-2972",
+
+                    horario:"Segunda a Sexta • 07h às 18h",
+
+                    mapa:"https://maps.google.com"
+
                 }
 
             ]
@@ -131,6 +147,22 @@ if(helpButtons.length){
                     telefone:"(41) 3271-1770",
 
                     horario:"Segunda a Segunda • 08h às 18h",
+
+                    mapa:"https://maps.google.com"
+
+                },
+
+                {
+
+                    nome:"Conselho Tutelar",
+
+                    imagem:"images/conselho.jpg",
+
+                    endereco:"R. Júlia da Costa, 420 - Centro Histórico, Paranaguá - PR, 83203-060",
+
+                    telefone:"(41) 3721-1760",
+
+                    horario:"Segunda a Segunda • 08h às 17h",
 
                     mapa:"https://maps.google.com"
 
