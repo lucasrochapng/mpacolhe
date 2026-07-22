@@ -51,15 +51,17 @@
 
         <div class="witness-content">
 
-            <h2>
+            <h2 id="conheceText">
 
                 Você conhece alguém que possa contribuir com informações sobre este caso?
+                <button class="speak-button" data-target="conheceText"><i class="fa-solid fa-volume-high"></i></button>
 
             </h2>
 
-            <p class="witness-subtitle">
+            <p class="witness-subtitle" id="preenchaText">
 
                 Preencha os dados abaixo. As informações serão encaminhadas para análise da Promotoria.
+                <button class="speak-button" data-target="preenchaText"><i class="fa-solid fa-volume-high"></i></button>
 
             </p>
 
@@ -160,12 +162,13 @@
 
             </div>
 
-            <div class="emergency-note">
+            <div class="emergency-note" id="riscoText">
 
                 <i class="fa-solid fa-circle-info"></i>
 
                 Caso exista risco imediato à integridade da testemunha,
                 procure imediatamente a autoridade policial.
+                <button class="speak-button" data-target="riscoText"><i class="fa-solid fa-volume-high"></i></button>
 
             </div>
 
@@ -184,6 +187,7 @@
 </div>
 
 <script src="js/testemunha.js"></script>
+<script src="js/leitor.js"></script>
 
 </body>
 
