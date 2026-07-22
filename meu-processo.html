@@ -36,8 +36,14 @@
 
         </div>
 
-        <p class="subtitle">
+        <p class="subtitle" id="processoText">
+
             Acompanhe o andamento do seu processo de forma simples.
+
+            <button class="speak-button" data-target="processoText">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+
         </p>
 
         <div class="tabs">
@@ -57,7 +63,7 @@
 
             <div class="progress">
 
-                <!-- Ocorrência registrada -->
+                <!-- Ocorrência registrada! -->
                 <div class="step completed">
 
                     <div class="icon">
@@ -83,8 +89,9 @@
 
                                 <h4>O que aconteceu?</h4>
 
-                                <p>
+                                <p id="ocorrenciaText">
                                     A ocorrência foi registrada pelas autoridades competentes, dando início ao atendimento do caso.
+                                    <button class="speak-button" data-target="ocorrenciaText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -93,8 +100,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="ocorrenciaText2">
                                     Será iniciada a investigação para esclarecer os fatos e reunir informações.
+                                    <button class="speak-button" data-target="ocorrenciaText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -105,7 +113,7 @@
 
                 </div>
 
-                <!-- Investigação -->
+                <!-- Investigação! -->
                 <div class="step completed">
 
                     <div class="icon">
@@ -131,8 +139,9 @@
 
                                 <h4>O que aconteceu?</h4>
 
-                                <p>
+                                <p id="investigacaoText">
                                     A polícia reuniu informações, ouviu testemunhas e buscou esclarecer como os fatos aconteceram.
+                                    <button class="speak-button" data-target="investigacaoText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -141,8 +150,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="investigacaoText2">
                                     Serão realizadas perícias e outras diligências necessárias para fortalecer as provas.
+                                    <button class="speak-button" data-target="investigacaoText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -153,7 +163,7 @@
 
                 </div>
 
-                <!-- Perícias realizadas -->
+                <!-- Perícias realizadas! -->
                 <div class="step completed">
 
                     <div class="icon">
@@ -179,8 +189,9 @@
 
                                 <h4>O que aconteceu?</h4>
 
-                                <p>
+                                <p id="periciasText">
                                     Especialistas analisaram vestígios, documentos e outras evidências para auxiliar na apuração dos fatos.
+                                    <button class="speak-button" data-target="periciasText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -189,8 +200,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="periciasText2">
                                     Todas as provas serão reunidas para a conclusão do inquérito policial.
+                                    <button class="speak-button" data-target="periciasText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -201,7 +213,7 @@
 
                 </div>
 
-                <!-- Inquérito concluído -->
+                <!-- Inquérito concluído! -->
                 <div class="step completed">
 
                     <div class="icon">
@@ -227,8 +239,9 @@
 
                                 <h4>O que aconteceu?</h4>
 
-                                <p>
+                                <p id="inqueritoText">
                                     A investigação foi encerrada e o inquérito foi encaminhado ao Ministério Público para análise.
+                                    <button class="speak-button" data-target="inqueritoText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -237,8 +250,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="inqueritoText2">
                                     O Ministério Público decidirá se apresentará uma denúncia ou adotará outra medida prevista em lei.
+                                    <button class="speak-button" data-target="inqueritoText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -249,7 +263,7 @@
 
                 </div>
 
-                <!-- Denúncia -->
+                <!-- Denúncia! -->
                 <div class="step current">
 
                     <div class="icon">
@@ -275,8 +289,9 @@
 
                                 <h4>O que significa?</h4>
 
-                                <p>
+                                <p id="denunciaText">
                                     O Ministério Público entendeu que existem provas suficientes para pedir à Justiça o início da ação penal contra o acusado.
+                                    <button class="speak-button" data-target="denunciaText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -285,8 +300,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="denunciaText2">
                                     Será realizada a audiência de instrução para ouvir as partes e produzir as provas em juízo.
+                                    <button class="speak-button" data-target="denunciaText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -297,7 +313,7 @@
 
                 </div>
 
-                <!-- Audiência de instrução -->
+                <!-- Audiência de instrução! -->
                 <div class="step pending">
 
                     <div class="icon">
@@ -323,8 +339,9 @@
 
                                 <h4>O que vai acontecer?</h4>
 
-                                <p>
+                                <p id="audienciaText">
                                     O juiz ouvirá testemunhas, vítimas, defesa e acusação para compreender todos os detalhes do caso.
+                                    <button class="speak-button" data-target="audienciaText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -333,8 +350,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="audienciaText2">
                                     Após analisar as provas, o juiz decidirá se o caso será encaminhado ao Tribunal do Júri.
+                                    <button class="speak-button" data-target="audienciaText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -345,7 +363,7 @@
 
                 </div>
 
-                <!-- Decisão de pronúncia -->
+                <!-- Decisão de pronúncia! -->
                 <div class="step pending">
 
                     <div class="icon">
@@ -371,8 +389,9 @@
 
                                 <h4>O que significa?</h4>
 
-                                <p>
+                                <p id="decisaoText">
                                     O juiz analisará as provas e decidirá se existem elementos suficientes para que o caso seja julgado pelo Tribunal do Júri.
+                                    <button class="speak-button" data-target="decisaoText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -381,8 +400,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="decisaoText2">
                                     As partes poderão recorrer da decisão, caso entendam que ela precisa ser revista.
+                                    <button class="speak-button" data-target="decisaoText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -393,7 +413,7 @@
 
                 </div>
 
-                <!-- Recurso -->
+                <!-- Recurso! -->
                 <div class="step pending">
 
                     <div class="icon">
@@ -419,8 +439,9 @@
 
                                 <h4>O que significa?</h4>
 
-                                <p>
+                                <p id="recursoText">
                                     Caso alguma das partes discorde da decisão, ela poderá solicitar que um tribunal reavalie esse entendimento.
+                                    <button class="speak-button" data-target="recursoText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -429,8 +450,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="recursoText2">
                                     Depois da análise dos recursos, o processo poderá seguir para o Tribunal do Júri.
+                                    <button class="speak-button" data-target="recursoText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -441,7 +463,7 @@
 
                 </div>
 
-                <!-- Tribunal do Júri designado -->
+                <!-- Tribunal do Júri designado! -->
                 <div class="step pending">
 
                     <div class="icon">
@@ -467,8 +489,9 @@
 
                                 <h4>O que significa?</h4>
 
-                                <p>
+                                <p id="tribunalText">
                                     A Justiça marcou a data em que o caso será analisado pelo Tribunal do Júri.
+                                    <button class="speak-button" data-target="tribunalText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -477,8 +500,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="tribunalText2">
                                     No dia marcado, jurados e juiz participarão do julgamento.
+                                    <button class="speak-button" data-target="tribunalText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -489,7 +513,7 @@
 
                 </div>
 
-                <!-- Júri realizado -->
+                <!-- Júri realizado! -->
                 <div class="step pending">
 
                     <div class="icon">
@@ -515,8 +539,9 @@
 
                                 <h4>O que aconteceu?</h4>
 
-                                <p>
+                                <p id="juriText">
                                     O julgamento foi realizado perante o Tribunal do Júri e os jurados decidiram sobre os fatos apresentados durante o processo.
+                                    <button class="speak-button" data-target="juriText"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -525,8 +550,9 @@
 
                                 <h4>Próximo passo</h4>
 
-                                <p>
+                                <p id="juriText2">
                                     Após a decisão, o processo seguirá conforme a sentença e as medidas previstas pela Justiça.
+                                    <button class="speak-button" data-target="juriText2"><i class="fa-solid fa-volume-high"></i></button>
                                 </p>
 
                             </div>
@@ -546,7 +572,7 @@
 
             <div class="timeline">
 
-                <!-- Ocorrência -->
+                <!-- Ocorrência! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -559,15 +585,16 @@
 
                         <h3>Ocorrência registrada</h3>
 
-                        <p>
+                        <p id="timelineOcorrencia">
                             O fato foi comunicado às autoridades competentes e teve início a apuração do caso.
+                            <button class="speak-button" data-target="timelineOcorrencia"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                     </div>
 
                 </div>
 
-                <!-- Investigação -->
+                <!-- Investigação! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -580,15 +607,16 @@
 
                         <h3>Investigação iniciada</h3>
 
-                        <p>
+                        <p id="timelineInvestigacao">
                             A Polícia Civil iniciou as investigações para esclarecer os fatos, identificar os responsáveis e reunir provas.
+                            <button class="speak-button" data-target="timelineInvestigacao"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                     </div>
 
                 </div>
 
-                <!-- Perícias -->
+                <!-- Perícias! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -601,15 +629,16 @@
 
                         <h3>Perícias concluídas</h3>
 
-                        <p>
+                        <p id="timelinePericias">
                             Os exames técnicos necessários para a investigação foram realizados e seus laudos passaram a integrar o inquérito policial.
+                            <button class="speak-button" data-target="timelinePericias"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                     </div>
 
                 </div>
 
-                <!-- Inquérito -->
+                <!-- Inquérito! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -622,15 +651,16 @@
 
                         <h3>Inquérito concluído</h3>
 
-                        <p>
+                        <p id="timelineInquerito">
                             A Polícia Civil concluiu o inquérito e o encaminhou ao Ministério Público para análise.
+                            <button class="speak-button" data-target="timelineInquerito"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                     </div>
 
                 </div>
 
-                <!-- Denúncia -->
+                <!-- Denúncia! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -643,15 +673,17 @@
 
                         <h3>Denúncia apresentada</h3>
 
-                        <p>
+                        <p id="timelineDenuncia">
                             Após analisar as provas reunidas, o Ministério Público ofereceu denúncia ao Poder Judiciário, dando início à ação penal.
+                            <button class="speak-button" data-target="timelineDenuncia"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <div class="timeline-note">
+                        <div class="timeline-note" id="timelineDenuncia2">
 
                             <strong>Importante:</strong>
 
                             A denúncia não significa condenação. Ela indica apenas que existem elementos suficientes para que o caso seja analisado pela Justiça.
+                            <button class="speak-button" data-target="timelineDenuncia2"><i class="fa-solid fa-volume-high"></i></button>
 
                         </div>
 
@@ -659,7 +691,7 @@
 
                 </div>
 
-                <!-- Audiência -->
+                <!-- Audiência! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -672,24 +704,28 @@
 
                         <h3>Audiência de instrução designada</h3>
 
-                        <p>
+                        <p id="timelineAudiencia">
                             A audiência foi marcada para o dia <strong>20/05/2026 às 14h00</strong>, no Fórum da Comarca.
+                            <button class="speak-button" data-target="timelineAudiencia"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <p>
+                        <p id="timelineAudiencia2">
                             Nesta etapa serão ouvidas testemunhas, poderão ser produzidas novas provas e o acusado poderá ser interrogado.
+                            <button class="speak-button" data-target="timelineAudiencia2"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                         <div class="timeline-alert">
 
                             <strong>📢 Sua presença é muito importante.</strong>
 
-                            <p>
+                            <p id="timelineAudiencia3">
                                 Caso seja convocado(a), compareça ao local com antecedência e esteja munido(a) de documento oficial com foto.
+                                <button class="speak-button" data-target="timelineAudiencia3"><i class="fa-solid fa-volume-high"></i></button>
                             </p>
 
-                            <p>
+                            <p id="timelineAudiencia4">
                                 Em caso de dúvidas, entre em contato com a Promotoria pelo aplicativo.
+                                <button class="speak-button" data-target="timelineAudiencia4"><i class="fa-solid fa-volume-high"></i></button>
                             </p>
 
                         </div>
@@ -698,7 +734,7 @@
 
                 </div>
 
-                <!-- Pronúncia -->
+                <!-- Decisão de Pronúncia! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -711,15 +747,17 @@
 
                         <h3>Decisão de pronúncia</h3>
 
-                        <p>
+                        <p id="timelineDecisao">
                             Após analisar todas as provas produzidas durante a instrução, o juiz decidiu que existem indícios suficientes para que o caso seja submetido ao Tribunal do Júri.
+                            <button class="speak-button" data-target="timelineDecisao"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <div class="timeline-note">
+                        <div class="timeline-note" id="timelineDecisao2">
 
                             <strong>Importante:</strong>
 
                             A decisão de pronúncia não representa uma condenação. Ela apenas determina que o julgamento será realizado pelo Tribunal do Júri.
+                            <button class="speak-button" data-target="timelineDecisao2"><i class="fa-solid fa-volume-high"></i></button>
 
                         </div>
 
@@ -727,7 +765,7 @@
 
                 </div>
 
-                <!-- Recurso -->
+                <!-- Recurso! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -740,19 +778,22 @@
 
                         <h3>Recurso apresentado</h3>
 
-                        <p>
+                        <p id="timelineRecurso">
                             A defesa apresentou recurso contra a decisão de pronúncia.
+                            <button class="speak-button" data-target="timelineRecurso"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <p>
+                        <p id="timelineRecurso2">
                             O Tribunal analisará os argumentos apresentados antes do prosseguimento do processo.
+                            <button class="speak-button" data-target="timelineRecurso2"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <div class="timeline-note">
+                        <div class="timeline-note" id="timelineRecurso3">
 
                             <strong>Importante:</strong>
 
                             A apresentação de recursos faz parte do devido processo legal e garante às partes o direito de contestar decisões judiciais.
+                            <button class="speak-button" data-target="timelineRecurso3"><i class="fa-solid fa-volume-high"></i></button>
 
                         </div>
 
@@ -760,7 +801,7 @@
 
                 </div>
 
-                <!-- Júri designado -->
+                <!-- Júri designado! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -773,16 +814,18 @@
 
                         <h3>Tribunal do Júri designado</h3>
 
-                        <p>
+                        <p id="timelineJuri">
                             O julgamento foi marcado para o dia <strong>25/09/2026 às 09h00</strong>, no Tribunal do Júri da Comarca.
+                            <button class="speak-button" data-target="timelineJuri"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                         <div class="timeline-alert">
 
                             <strong>📢 Sua presença é muito importante.</strong>
 
-                            <p>
+                            <p id="timelineJuri2">
                                 Caso deseje acompanhar o julgamento, compareça ao local com antecedência e esteja munido(a) de documento oficial com foto.
+                                <button class="speak-button" data-target="timelineJuri2"><i class="fa-solid fa-volume-high"></i></button>
                             </p>
 
                         </div>
@@ -791,7 +834,7 @@
 
                 </div>
 
-                <!-- Julgamento -->
+                <!-- Julgamento! -->
                 <div class="timeline-item">
 
                     <div class="timeline-icon">
@@ -804,16 +847,19 @@
 
                         <h3>Julgamento concluído</h3>
 
-                        <p>
+                        <p id="timelineJulgamento">
                             O Tribunal do Júri realizou o julgamento do processo.
+                            <button class="speak-button" data-target="timelineJulgamento"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <p>
+                        <p id="timelineJulgamento2">
                             Caso haja recursos previstos em lei, eles serão analisados pelas instâncias competentes.
+                            <button class="speak-button" data-target="timelineJulgamento2"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
-                        <p>
+                        <p id="timelineJulgamento3">
                             A Promotoria permanecerá disponível para prestar orientações e esclarecer dúvidas relacionadas às próximas etapas do processo.
+                            <button class="speak-button" data-target="timelineJulgamento3"><i class="fa-solid fa-volume-high"></i></button>
                         </p>
 
                     </div>
@@ -830,6 +876,7 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/leitor.js"></script>
 
 </body>
 </html>
